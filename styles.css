@@ -1,0 +1,64 @@
+body {
+    background-color: #f0f0f0; 
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background-color: #fff; 
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.calculator-background {
+    background-image: url('math-background.jpg'); 
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5; 
+    z-index: -1;
+}
+
+.display {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-size: 24px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn:active {
+    box-shadow: 0 0 10px rgba(240, 255, 168, 0.992);
+}
+.btn:hover {
+    background-color: #ccc;
+}
+
+.operator {
+    background-color: #ffa500; 
+    color: #fff;
+}
